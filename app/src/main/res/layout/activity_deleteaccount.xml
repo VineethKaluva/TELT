@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar_layout"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you sure you want to delete the account?"
+            android:id="@+id/tvTextDisp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold|italic"
+            android:textSize="18sp"
+            android:layout_marginRight="15dp" />
+
+    <EditText
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etusername"
+        android:layout_marginTop="15dp"
+        android:hint="Enter username"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etmail"
+        android:layout_marginTop="15dp"
+        android:hint="Enter email address"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YES"
+            android:id="@+id/btnYes"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/tvTextDisp"
+            android:layout_alignRight="@+id/tvTextDisp"
+            android:layout_alignEnd="@+id/tvTextDisp"
+            android:textStyle="bold|italic"
+            android:onClick="OnYes"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO"
+            android:id="@+id/btnNo"
+            android:textStyle="bold|italic"
+            android:layout_below="@+id/btnYes"
+            android:layout_alignLeft="@+id/btnYes"
+            android:layout_alignStart="@+id/btnYes"
+            android:onClick="OnNo"
+            android:layout_gravity="center_horizontal" />
+
+
+
+
+</LinearLayout>

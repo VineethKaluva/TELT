@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar_layout" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Photo"
+            android:id="@+id/tvcam"
+            android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/abc_text_size_medium_material" />
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="TAKE PICTURE"
+            android:id="@+id/btnTakePicture"
+            android:onClick="OnTakePicture"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:src="@drawable/camera_image"
+            android:layout_below="@+id/tvcam"
+            android:layout_alignRight="@+id/tvgallery"
+            android:layout_alignEnd="@+id/tvgallery"
+            android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gal"
+        android:id="@+id/tvgallery"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_above="@+id/btnChooseFromGallery"
+        android:layout_alignRight="@+id/btnChooseFromGallery"
+        android:layout_alignEnd="@+id/btnChooseFromGallery"
+        android:layout_marginBottom="20dp"
+        android:textSize="@dimen/abc_text_size_medium_material" />
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="CHOOSE FROM GALLERY"
+            android:id="@+id/btnChooseFromGallery"
+            android:onClick="OnChooseFromGallery"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal|bottom"
+            android:src="@drawable/photogal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="45dp" />
+
+
+</RelativeLayout>

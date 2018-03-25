@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.praha.telt.HelpFragment"
+    android:outlineProvider="paddedBounds">
+
+
+   <!-- <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/usermanual"/>
+-->
+
+    <Button
+        android:layout_width="383dp"
+        android:layout_height="67dp"
+        android:text="USER MANUAL"
+        android:id="@+id/btnusermanual"
+        android:layout_gravity="center_horizontal|top"
+        android:background="#f9f9f9"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:layout_width="383dp"
+        android:layout_height="66dp"
+        android:text="FAQ&apos;s"
+        android:id="@+id/btnfaq"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="58dp"
+        android:background="#f9f9f9"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:layout_width="383dp"
+        android:layout_height="66dp"
+        android:text="SUGGEST/REPORT"
+        android:id="@+id/btnsuggestreport"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="115dp"
+        android:background="#f9f9f9"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:layout_width="383dp"
+        android:layout_height="66dp"
+        android:text="TERMS AND CONDITIONS"
+        android:id="@+id/btntandc"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="172dp"
+        android:background="#f9f9f9"
+        android:textStyle="bold|italic" />
+</FrameLayout>

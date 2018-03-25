@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.praha.telt"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-feature android:name="android.hardware.camera" android:required= "true" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TextExtraction"
+            android:label="EXTRACTED TEXT"></activity>
+
+        <activity
+            android:name=".HomePage"
+            android:label="HOME"></activity>
+
+        <activity
+            android:name=".TranslatedText"
+            android:label="TRANSLATED TEXT"></activity>
+
+        <activity
+            android:name=".Login"
+            android:noHistory="true"
+            android:label="LOGIN"></activity>
+
+        <activity
+            android:name=".Register"
+            android:noHistory="true"
+            android:label="REGISTER"></activity>
+
+
+        <activity
+            android:name=".ForgotPassword"
+            android:label="FORGOT PASSWORD"></activity>
+
+
+        <activity
+            android:name=".DeleteAccount"
+            android:label="DELETE ACCOUNT"></activity>
+
+
+        <activity
+            android:name=".ChangePassword"
+            android:label="CHANGE PASSWORD"></activity>
+
+        <activity
+            android:name=".SelectImage"
+            android:label="SELECT IMAGE"></activity>
+
+        <activity
+            android:name=".Usermanual"
+            android:label="USER MANUAL"></activity>
+
+
+    </application>
+
+</manifest>

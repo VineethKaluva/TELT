@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.praha.telt.AboutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView3"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:text="Extract and Translate"
+        android:id="@+id/textView4"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        style="@style/Base.TextAppearance.AppCompat.Display1"
+        android:textColorHighlight="#f47288"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/abc_text_size_display_1_material" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 1.2.1"
+        android:id="@+id/textView5"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:textSize="@dimen/abc_text_size_large_material" />
+
+    <TextView
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:text="Thanks for choosing EXTRACT AND TRANSLATE to extract text from images and translate into other languages. "
+        android:id="@+id/textView6"
+        android:layout_gravity="left|center"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For any doubts and suggestions, please contact :  telt.suggest@gmail.com"
+        android:id="@+id/textView7"
+        android:layout_gravity="left|center"
+        android:layout_marginTop="165dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="10dp"/>
+
+</FrameLayout>

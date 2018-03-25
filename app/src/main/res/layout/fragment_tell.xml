@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.praha.telt.TellFragment">
+
+
+    <Button
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:text="SEND A SMS"
+        android:id="@+id/btnsms"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:layout_width="383dp"
+        android:layout_height="66dp"
+        android:text="SEND A MAIL"
+        android:id="@+id/btnmail"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:text="SEND THROUGH WHATSAPP"
+        android:id="@+id/btnwhatsapp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="120dp"
+        android:textStyle="bold|italic" />
+
+</FrameLayout>
